@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_yellow">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/note_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/note_detail"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="18dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/note_title_hint"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:background="@drawable/search_box_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            />
+        <EditText
+            android:id="@+id/edit_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/note_content_hint"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/search_box_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_note_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            style="@style/Widget.Material3.Button"
+            app:backgroundTint="@color/primary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
