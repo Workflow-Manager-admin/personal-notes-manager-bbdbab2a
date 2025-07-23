@@ -5,17 +5,18 @@ plugins {
 android {
     namespace 'com.example.frontendandroid'
     compileSdk 34
-    
-    buildFeatures {
-        buildConfig true
-    }
-    
+
     defaultConfig {
         applicationId "com.example.frontendandroid"
         minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildFeatures {
+        buildConfig true
     }
 
     compileOptions {
@@ -54,4 +55,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
 }

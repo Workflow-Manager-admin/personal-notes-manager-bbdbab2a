@@ -1,0 +1,14 @@
+<resources>
+    <style name="Theme.MaterialNotesApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/secondary</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="android:editTextBackground">@drawable/search_box_bg</item>
+        <item name="cardViewStyle">@style/Widget.MaterialComponents.CardView</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+</resources>
