@@ -4,5 +4,8 @@
     <color name="primary_light">#63A4FF</color>
     <color name="secondary">#424242</color>
     <color name="accent">#FF9800</color>
+    <!-- Updated card background to white for clean separation -->
     <color name="card_bg">#FFFFFFFF</color>
+    <!-- Bright yellow background for app as per requirement -->
+    <color name="background_yellow">#FFEB3B</color>
 </resources>
